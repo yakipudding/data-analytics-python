@@ -1,0 +1,24 @@
+{
+    "name": "データ分析のためのPython構文集",
+    "version": "0.1.0",
+    "description": "データ分析に使えるPythonの構文を集めました",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yakipudding/data-analytics-python"
+    },
+    "keywords": [
+      "boogi",
+      "docs"
+    ],
+    "main": "n/a",
+    "scripts": {
+      "start": "node_modules/.bin/boogi develop",
+      "develop": "node_modules/.bin/boogi develop",
+      "build": "node_modules/.bin/boogi build",
+      "clean": "node_modules/.bin/boogi clean"
+    },
+    "dependencies": {
+        "boogi-cli": "0.4.0"
+    }
+  }
+  

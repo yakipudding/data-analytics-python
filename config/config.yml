@@ -1,0 +1,58 @@
+metadata:
+  name: データ分析のためのPython構文集
+  short_name: データ分析のためのPython構文集
+  description: データ分析に使えるPythonの構文を集めました
+  language: ja
+  url: 'http://localhost'
+  pathPrefix: /
+  gaTrackingId: null
+  favicon: /assets/favicon.png
+  themeColor: '#0066cc'
+header:
+  enabled: true
+  logo: /assets/logo.png
+  links: []
+sidebar:
+  ignoreIndex: false
+  forcedNavOrder: []
+  expanded: []
+  groups: []
+  links: []
+  poweredBy: {}
+  enabled: true
+pwa:
+  enabled: true
+  manifest:
+    icon: /assets/logo.png
+    display: minimal-ui
+    crossOrigin: anonymous
+features:
+  editOnRepo:
+    editable: true
+    location: 'https://github.com/yakipudding/data-analytics-python'
+    type: github
+  search:
+    enabled: false
+    indexName: docs
+    showStats: true
+    pagination:
+      enabled: true
+  rss:
+    enabled: false
+    showIcon: true
+    copyright: ''
+    categories: []
+    matchRegex: ^/
+    outputPath: /rss.xml
+  darkMode:
+    enabled: true
+    default: false
+social:
+  github: 'https://github.com/yakipudding/data-analytics-python'
+  twitter: 'https://twitter.com/yakipudding'
+search:
+  enabled: true
+  startComponent: input
+  placeholder: 検索...
+  pagination:
+    enabled: true
