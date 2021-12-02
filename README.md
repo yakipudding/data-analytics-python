@@ -4,6 +4,10 @@
 
 This app was created with [BooGi](https://boogi.netlify.app).
 
+## WebSite
+Firebaseでホスティングしてます
+[データ分析と機械学習のためのPython構文集](https://pythoncheatsheet-3392f.web.app)
+
 ## Developing
 
 To start development server with live reload when something changes:
