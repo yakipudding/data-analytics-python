@@ -1,16 +1,9 @@
 ---
-title: 'About データ分析のためのPython構文集'
+title: 'このサイトについて'
 ---
-
-:wave: Hello!
-
-You successfully initialized your BooGi page :smile:.
 
 データ分析に使えるPythonの構文を集めました
 
-<Error>
-
-Please **do not remove this file** as it is required for app
-to work properly -- this is your page root (index).
-
-</Error>
+参考文献
+- [機械学習のための特徴量エンジニアリング(Alice Zheng, Amanda Casari 2019年02月)](https://github.com/HOXOMInc/feature-engineering-book)
+- [Kaggleに登録したら次にやること ～ これだけやれば十分闘える！Titanicの先へ行く入門 10 Kernel ～](https://qiita.com/upura/items/3c10ff6fed4e7c3d70f0)

@@ -1,6 +1,6 @@
-# データ分析のためのPython構文集
+# データ分析と機械学習のためのPython構文集
 
-データ分析に使えるPythonの構文を集めました
+データ分析と機械学習に使えるPythonの構文を集めました
 
 This app was created with [BooGi](https://boogi.netlify.app).
 
