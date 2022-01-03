@@ -11,18 +11,22 @@ df = sns.load_dataset('titanic')
 df2 = sns.load_dataset('iris')
 ```
 
-## 縦棒グラフ
+## 比較：縦棒グラフ
 ![image](../images/cat.png)
+
+- `hue`：指定したカテゴリ値ごとに棒グラフを横に並べる（色分け）
 
 ### x,yを直接指定
 
 ```py
-sns.barplot(x,y)
+sns.barplot(x, y)
 ```
 
 ### カテゴリ値のカウント値グラフ
 
 ```py
+sns.countplot(x="pclass", data=df)
+# または
 sns.catplot(x="pclass", data=df, kind="count")
 ```
 
@@ -37,7 +41,8 @@ sns.catplot(x='sex', y='age', data=df, kind='bar', hue='survived')
 
 ※横棒グラフにしたい場合はyを指定する
 
-## 折れ線グラフ
+## 推移確認
+### 折れ線グラフ
 
 ![image](../images/line.png)
 
@@ -45,12 +50,13 @@ sns.catplot(x='sex', y='age', data=df, kind='bar', hue='survived')
 sns.lineplot(x="timepoint", y="signal", data=fmri)
 ```
 
-## ヒストグラム
+## 分布確認
+### ヒストグラム
 
 ![image](../images/displot.png)
 
 ```py
-sns.displot(df['age'])
+sns.displot(df['age'], hist=True)
 ```
 
 ## バイオリンプロット

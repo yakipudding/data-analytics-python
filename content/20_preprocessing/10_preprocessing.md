@@ -33,7 +33,7 @@ Dateの年,月,日(0埋め) | `df.列名.dt.strftime('%m')` |
 --- | --- | --- 
 固定値→固定値 | `df.列名.replace(['A','B'], [0,1], inplace=True)` |
 固定値→固定値2 | `df['列名'] = df['列名'].map({'A': 0, 'B': 1} ).astype(int)` |
-文字列加工 | `df['name'].str[0:3]` |前3文字
+文字列加工 | `df['列名'].str[0:3]` |前3文字
 関数を使用した変換 | `df['列名'] = df.apply(lambda x:replace_fc_sample(x),axis=1)` |
 関数を使用した変換2 | `df['列名'] = df.apply(replace_fc_sample,axis=1)` |
 

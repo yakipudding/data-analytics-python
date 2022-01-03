@@ -41,10 +41,16 @@ index出力なし | `index=False` |
 ## 行数や列名・列数の情報
 項目 | 内容
 --- | --- 
+列情報 | `df.info()`
 列名一覧 | `df.columns`
 行数 | `len(df)`
 行数・列数 | `df.shape`
 列の型一覧 | `df.dtypes`
+
+## 特定の型の列を抽出する
+- `df.select_dtypes(include=object)`
+- `df.select_dtypes(exclude='number')`
+  - 数値型は`number`で指定可能
 
 ## 一部のデータを見る
 項目 | 内容
@@ -85,7 +91,7 @@ index出力なし | `index=False` |
 --- | --- | --- 
 列名変更 | `df.rename(columns={'A': 'a'})` |
 列削除 | `df.drop('削除列', axis = 1)` |
-df縦にくっつける | `pd.concat([df1,df2], axis=1)` |
+df縦にくっつける | `pd.concat([df1,df2], axis=0)` |
 df結合 | `pd.merge(df_left, df_right, on='key', how='left')` | howはleft/right/inner/outer
 dfコピー | `df_product.copy()` |
 Numpy配列(narray)として取得 | `df列名.values` |
