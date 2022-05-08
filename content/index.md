@@ -1,9 +1,12 @@
 ---
-title: 'このサイトについて'
+title: 'Python構文集'
 ---
 
-データ分析に使えるPythonの構文を集めました
+## 概要
+- 自分用に作成したPython構文集
+- 忘れがちなPythonの基本的な記法とか使い方とかを記載してます
+- データ分析やML系とかもちょいちょい
 
-参考文献
-- [機械学習のための特徴量エンジニアリング(Alice Zheng, Amanda Casari 2019年02月)](https://github.com/HOXOMInc/feature-engineering-book)
-- [Kaggleに登録したら次にやること ～ これだけやれば十分闘える！Titanicの先へ行く入門 10 Kernel ～](https://qiita.com/upura/items/3c10ff6fed4e7c3d70f0)
+## 参考文献
+- [Pythonチュートリアル](https://docs.python.org/ja/3/tutorial/index.html)
+

@@ -77,3 +77,5 @@ node_modules
 *.iml
 reduxcache*
 .generated.config.js
+
+00_test/

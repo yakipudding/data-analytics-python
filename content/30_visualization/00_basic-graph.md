@@ -4,6 +4,15 @@ title: '標準的なグラフ'
 
 参考：[seaborn 徹底入門！Pythonを使って手軽で綺麗なデータ可視化８連発](https://www.codexa.net/seaborn-python/)
 
+## imports
+```py
+import pandas as pd
+pd.plotting.register_matplotlib_converters()
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+```
+
 ## snsのサンプルデータを取得
 ```py
 tips = sns.load_dataset('tips')
@@ -11,7 +20,7 @@ df = sns.load_dataset('titanic')
 df2 = sns.load_dataset('iris')
 ```
 
-## 比較：縦棒グラフ
+## 縦棒グラフ
 ![image](../images/cat.png)
 
 - `hue`：指定したカテゴリ値ごとに棒グラフを横に並べる（色分け）
@@ -26,7 +35,9 @@ sns.barplot(x, y)
 
 ```py
 sns.countplot(x="pclass", data=df)
-# または
+```
+
+```py
 sns.catplot(x="pclass", data=df, kind="count")
 ```
 

@@ -8,6 +8,7 @@ Matplotlibをベースに、設定やデザインをいい感じにできる可�
 
 ## imports
 ```py
+import pandas as pd
 pd.plotting.register_matplotlib_converters()
 import matplotlib.pyplot as plt
 %matplotlib inline

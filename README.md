@@ -1,8 +1,11 @@
 # データ分析と機械学習のためのPython構文集
 
-データ分析と機械学習に使えるPythonの構文を集めました
+- 自分用のPython構文集です
+- 忘れがちなPythonの基本的な記法とか
+- データ分析やML系とか
 
-This app was created with [BooGi](https://boogi.netlify.app).
+## Created By Boodgi
+[BooGi](https://boogi.netlify.app)
 
 ## WebSite
 Firebaseでホスティングしてます

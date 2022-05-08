@@ -8,7 +8,7 @@ title: 'スケーリング'
 - 分布の形はそのままに、分布の範囲を一定にすることができる
 - 列ごとに分布の範囲がばらついているときにまとめることができる
 
-共通：preprocを使用する
+共通でsklearn.preprocessingを使用する例をあげる
 ```py
 import sklearn.preprocessing as preproc
 ```
@@ -18,7 +18,7 @@ import sklearn.preprocessing as preproc
 ※すかすかな分布（スパース）の時はあまり使わないように注意する（密にしすぎちゃう）
 
 ```py
-df['minmax'] = preproc.minmax_scale(df.数値列)
+preproc.minmax_scale(df.数値列)
 ```
 
 ## 標準化（分散スケーリング）
@@ -27,7 +27,7 @@ df['minmax'] = preproc.minmax_scale(df.数値列)
 平均0なので、出力が負になることもある
 
 ```py
-df['standardized'] = preproc.StandardScaler().fit_transform(df.数値列)
+preproc.StandardScaler().fit_transform(df.数値列)
 ```
 
 ## L2 正規化

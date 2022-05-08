@@ -7,7 +7,7 @@ metadata:
   pathPrefix: /
   gaTrackingId: null
   favicon: /assets/favicon.png
-  themeColor: '#0066cc'
+  themeColor: '#9c2b6a'
 header:
   enabled: true
   logo: /assets/logo.png
@@ -24,7 +24,7 @@ sidebar:
       path: "/20_preprocessing"
       title: "データ加工"
     - order: 3
-      path: "/30_analytics"
+      path: "/30_analyzing"
       title: "分析"
     - order: 4
       path: "/40_visualization"
