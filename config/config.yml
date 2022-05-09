@@ -1,7 +1,7 @@
 metadata:
-  name: データ分析と機械学習のためのPython構文集
-  short_name: データ分析と機械学習のためのPython構文集
-  description: データ分析と機械学習に使えるPythonの構文を集めました
+  name: Python構文集
+  short_name: Python構文集
+  description: データ分析とかML向けのメモ
   language: ja
   url: 'http://localhost'
   pathPrefix: /
@@ -18,21 +18,24 @@ sidebar:
   expanded: []
   groups: 
     - order: 1
-      path: "/10_basic"
-      title: "基本"
+      path: "/10_python"
+      title: "Python"
     - order: 2
+      path: "/11_dataframe"
+      title: "DataFrame"
+    - order: 3
       path: "/20_preprocessing"
       title: "データ加工"
-    - order: 3
-      path: "/30_analyzing"
-      title: "分析"
     - order: 4
-      path: "/40_visualization"
+      path: "/30_visualization"
       title: "可視化"
     - order: 5
+      path: "/40_analyzing"
+      title: "分析"
+    - order: 6
       path: "/50_feature-engineering"
       title: "特徴量エンジニアリング"
-    - order: 6
+    - order: 7
       path: "/60_machine-learning"
       title: "機械学習"
     - order: 8

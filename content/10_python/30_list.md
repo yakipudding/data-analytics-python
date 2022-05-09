@@ -23,12 +23,14 @@ li.append(5)
 ```
 
 ### 要素数
+
 ```py
 len(li)
 # 5
 ```
 
 ### 検索
+
 ```py
 # 要素があるかどうか
 3 in li
@@ -39,6 +41,7 @@ li.index(3)
 ```
 
 ### スライシング
+
 ```py
 # スライシング（最後の要素は含まない）
 li[0:2]
@@ -56,6 +59,7 @@ li[::-1]
 ```
 
 ### リスト内包表記
+
 ```py
 [item*2 for item in li]
 # [0, 2, 4, 6, 8]
@@ -67,6 +71,7 @@ li[::-1]
 
 ### 合計
 True/Falseのリストの場合、True(=1)の数になる
+
 ```py
 sum(li)
 # 10
@@ -74,13 +79,15 @@ sum(li)
 
 ### 結合
 リスト結合(concat)は+
+
 ```py
 [0, 1] + [2, 3, 4]
 # [0, 1, 2, 3, 4]
 ```
 
 ## イテラブル
-### [range](https://docs.python.org/ja/3/tutorial/controlflow.html#the-range-function)
+### range
+- リファレンス：https://docs.python.org/ja/3/tutorial/controlflow.html#the-range-function
 - 連続した数値リストを生成する
   - イテレータや自動生成データに使う
 - **rangeやスライスは最後の要素は対象に含まないので注意**
@@ -103,6 +110,7 @@ sum(li)
 
 ### indexも取得したいときはenumerate
 range使ってもよいがenumerate使えるなら使ったほうが良い
+
 ```py
 for i, d in enumerate(['a','b','c']):
   print(f'{i}: {d}')
@@ -113,6 +121,7 @@ for i, d in enumerate(['a','b','c']):
 
 ### 2つ一緒に回したいときはzip
 要素数が合わないときは短いほうに合わせてループが止まるので注意
+
 ```py
 for i, j in zip([0, 1, 2], ['a', 'b', 'c']):
   print(f'{i}, {j}')
@@ -135,6 +144,7 @@ set([0, 0, 0, 1, 2, 3, 3])
 ```
 
 ## ユニークな要素ごとにカウントしたいときはCounter
+
 ```py
 from collections import Counter
 count = Counter([0, 0, 0, 1, 2, 3, 3])

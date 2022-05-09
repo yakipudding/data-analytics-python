@@ -1,5 +1,5 @@
 # This is default jargon that you can use. Feel free to change it. See: https://boogi.netlify.app/editing/rich_content/abbreviations
-'データ分析と機械学習のためのPython構文集':
-  name: データ分析と機械学習のためのPython構文集
-  long_name: データ分析と機械学習のためのPython構文集
+'Python構文集':
+  name: Python構文集
+  long_name: Python構文集
   description: データ分析と機械学習に使えるPythonの構文を集めました

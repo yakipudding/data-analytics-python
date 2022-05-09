@@ -11,9 +11,9 @@ df.列名.astype('str')
 ```
 
 ### 日付型
-pandasの日付型は標準モジュールのdatetimeではなくpandasのdatetime
-datetime列のdtオブジェクトは標準モジュールのdatetimeとして扱える
-参考：https://pandas.pydata.org/docs/user_guide/timeseries.html
+- pandasの日付型は標準モジュールのdatetimeではなくpandasのdatetime
+- datetime列のdtオブジェクトは標準モジュールのdatetimeとして扱える
+- 参考：https://pandas.pydata.org/docs/user_guide/timeseries.html
 
 日付(string)列をpandasのDatetimeに変換
 

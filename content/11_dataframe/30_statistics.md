@@ -165,7 +165,38 @@ groupbyを行うと列名がMultiIndex(タプル)になるため、必要に応�
 df_g.columns = ["_".join(pair) for pair in df_g.columns]
 ```
 
+## クロス集計
+normalize='all'とすると、割合を出す
+
+```py
+pd.crosstab(df.type, df.id, margins=True, normalize='all')
+```
+
+id | 1 | 2 | 3 | All
+-- | -- | -- | -- | --
+type | - | - | - | 
+A | 0.333333 | 0.000000 | 0.000000 | 0.333333
+B | 0.000000 | 0.333333 | 0.000000 | 0.333333
+C | 0.000000 | 0.000000 | 0.333333 | 0.333333
+All | 0.333333 | 0.333333 | 0.333333 | 1.000000
+
+normalize='index'とすると、行ごとの割合を出す
+
+```py
+pd.crosstab(df.type, df.id, margins=True, normalize='index')
+```
+
+id | 1 | 2 | 3
+-- | -- | -- | --
+type | - | - | 
+A | 1.000000 | 0.000000 | 0.000000
+B | 0.000000 | 1.000000 | 0.000000
+C | 0.000000 | 0.000000 | 1.000000
+All | 0.333333 | 0.333333 | 0.333333
+
 ## ピボット（クロス集計）
+count以外の集計値を使いたいときはピボットを用いる
+
 ```py
 # 集計：列
 grouping_rows_index = ['type']
@@ -174,7 +205,7 @@ grouping_rows_columns = ['length']
 ## 集計：値
 pivot_values = 'id'
 ## 統計関数：sum/count/max/min/mean
-pivot_value_fc = 'count' 
+pivot_value_fc = 'sum' 
 ## 集計行を表示するか
 view_sum = True
 pivot_df = pd.pivot_table(df, index=grouping_rows_index, columns=grouping_rows_columns, values=pivot_values, aggfunc=pivot_value_fc, margins=view_sum)
@@ -184,9 +215,9 @@ length | 0.1 | 0.2 | 0.3 | All
 -- | -- | -- | -- | --
 type |  |  |  | 
 A | 1.0 | NaN | NaN | 1
-B | NaN | 1.0 | NaN | 1
-C | NaN | NaN | 1.0 | 1
-All | 1.0 | 1.0 | 1.0 | 3
+B | NaN | 2.0 | NaN | 2
+C | NaN | NaN | 3.0 | 3
+All | 1.0 | 2.0 | 3.0 | 6
 
 ## ランク
 

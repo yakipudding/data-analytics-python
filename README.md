@@ -1,4 +1,4 @@
-# データ分析と機械学習のためのPython構文集
+# Python構文集
 
 - 自分用のPython構文集です
 - 忘れがちなPythonの基本的な記法とか
@@ -9,7 +9,7 @@
 
 ## WebSite
 Firebaseでホスティングしてます
-[データ分析と機械学習のためのPython構文集](https://pythoncheatsheet-3392f.web.app)
+[Python構文集](https://pythoncheatsheet-3392f.web.app)
 
 ## Developing
 

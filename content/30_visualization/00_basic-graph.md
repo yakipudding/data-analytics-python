@@ -67,7 +67,7 @@ sns.lineplot(x="timepoint", y="signal", data=fmri)
 ![image](../images/displot.png)
 
 ```py
-sns.displot(df['age'], hist=True)
+sns.displot(df['age'])
 ```
 
 ## バイオリンプロット
